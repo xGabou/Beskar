@@ -13,8 +13,7 @@ public class BeskarArmorModel extends GeoModel<BeskarArmorItem> {
 
     @Override
     public ResourceLocation getTextureResource(BeskarArmorItem animatable) {
-        // Uses a vanilla armor texture so the template works without custom png files.
-        return new ResourceLocation("minecraft", "textures/models/armor/netherite_layer_1.png");
+        return new ResourceLocation(Beskar.MODID, "textures/armor/beskar_armor.png");
     }
 
     @Override
