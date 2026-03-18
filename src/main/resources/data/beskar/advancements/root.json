@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "beskar:beskar_spear"
+    },
+    "title": {
+      "translate": "advancements.beskar.root.title"
+    },
+    "description": {
+      "translate": "advancements.beskar.root.description"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "take_up_the_creed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beskar:beskar_spear",
+              "beskar:beskar_sword",
+              "beskar:beskar_helmet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
+

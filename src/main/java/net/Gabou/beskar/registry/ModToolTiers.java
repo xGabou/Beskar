@@ -1,14 +1,13 @@
 package net.Gabou.beskar.registry;
 
 import net.minecraft.util.LazyLoadedValue;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.function.Supplier;
 
 public enum ModToolTiers implements Tier {
-    BESKAR(6144, 13.0F, 8.0F, 5, 28, () -> Ingredient.of(Items.NETHERITE_INGOT));
+    BESKAR(6144, 13.0F, 8.0F, 5, 28, () -> Ingredient.of(ModItems.BESKAR_INGOT.get()));
 
     private final int uses;
     private final float speed;

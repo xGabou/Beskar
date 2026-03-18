@@ -18,6 +18,12 @@ public class ModCreativeTabs {
                     .withTabsBefore(CreativeModeTabs.COMBAT)
                     .icon(() -> ModItems.BESKAR_SWORD.get().getDefaultInstance())
                     .displayItems((parameters, output) -> {
+                        output.accept(ModItems.RAW_BESKAR.get());
+                        output.accept(ModItems.BESKAR_INGOT.get());
+                        output.accept(ModItems.BESKAR_COAL.get());
+                        output.accept(ModItems.BESKAR_ORE.get());
+                        output.accept(ModItems.BESKAR_BLAST_FURNACE.get());
+                        output.accept(ModItems.BESKAR_WORKBENCH.get());
                         output.accept(ModItems.BESKAR_HELMET.get());
                         output.accept(ModItems.BESKAR_CHESTPLATE.get());
                         output.accept(ModItems.BESKAR_LEGGINGS.get());

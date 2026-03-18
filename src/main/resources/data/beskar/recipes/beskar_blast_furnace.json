@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BFB",
+    "BIB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:blackstone"
+    },
+    "F": {
+      "item": "minecraft:blast_furnace"
+    },
+    "I": {
+      "item": "beskar:beskar_ingot"
+    }
+  },
+  "result": {
+    "item": "beskar:beskar_blast_furnace"
+  }
+}
+

@@ -1,0 +1,31 @@
+{
+  "parent": "beskar:this_is_the_way",
+  "display": {
+    "icon": {
+      "item": "beskar:beskar_spear"
+    },
+    "title": {
+      "translate": "advancements.beskar.mythosaur_hunter.title"
+    },
+    "description": {
+      "translate": "advancements.beskar.mythosaur_hunter.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "kill_with_spear_throw": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "direct_entity": {
+            "type": "minecraft:trident"
+          }
+        }
+      }
+    }
+  }
+}
+

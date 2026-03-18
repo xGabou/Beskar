@@ -1,0 +1,38 @@
+{
+  "parent": "beskar:root",
+  "display": {
+    "icon": {
+      "item": "beskar:beskar_boots"
+    },
+    "title": {
+      "translate": "advancements.beskar.foundling_no_more.title"
+    },
+    "description": {
+      "translate": "advancements.beskar.foundling_no_more.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "gear_up_for_the_hunt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beskar:beskar_helmet"
+            ]
+          },
+          {
+            "items": [
+              "beskar:beskar_spear"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
+

@@ -11,6 +11,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.Gabou.beskar.registry.ModBlockEntities;
+import net.Gabou.beskar.registry.ModBlocks;
 import net.Gabou.beskar.registry.ModCreativeTabs;
 import net.Gabou.beskar.registry.ModItems;
 import org.slf4j.Logger;
@@ -28,6 +30,8 @@ public class Beskar {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         GeckoLib.initialize();
+        ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
         ModItems.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
 

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ICI",
+    "CTC",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "beskar:beskar_ingot"
+    },
+    "C": {
+      "item": "beskar:beskar_coal"
+    },
+    "T": {
+      "item": "minecraft:crafting_table"
+    }
+  },
+  "result": {
+    "item": "beskar:beskar_workbench"
+  }
+}
+

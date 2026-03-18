@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "beskar:beskar_ore",
+    "beskar:beskar_blast_furnace",
+    "beskar:beskar_workbench"
+  ]
+}
+

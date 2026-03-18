@@ -1,0 +1,51 @@
+{
+  "parent": "beskar:root",
+  "display": {
+    "icon": {
+      "item": "beskar:beskar_chestplate"
+    },
+    "title": {
+      "translate": "advancements.beskar.this_is_the_way.title"
+    },
+    "description": {
+      "translate": "advancements.beskar.this_is_the_way.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 500
+  },
+  "criteria": {
+    "full_beskar_set": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beskar:beskar_helmet"
+            ]
+          },
+          {
+            "items": [
+              "beskar:beskar_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "beskar:beskar_leggings"
+            ]
+          },
+          {
+            "items": [
+              "beskar:beskar_boots"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
+
