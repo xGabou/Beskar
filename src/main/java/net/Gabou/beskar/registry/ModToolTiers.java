@@ -8,7 +8,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolTiers implements Tier {
-    BESKAR(2031, 9.0F, 4.0F, 4, 18, () -> Ingredient.of(Items.NETHERITE_INGOT));
+    BESKAR(6144, 13.0F, 8.0F, 5, 28, () -> Ingredient.of(Items.NETHERITE_INGOT));
 
     private final int uses;
     private final float speed;

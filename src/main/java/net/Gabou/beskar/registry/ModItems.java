@@ -2,6 +2,7 @@ package net.Gabou.beskar.registry;
 
 import net.Gabou.beskar.Beskar;
 import net.Gabou.beskar.item.BeskarArmorItem;
+import net.Gabou.beskar.item.BeskarSpearItem;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.AxeItem;
@@ -28,15 +29,17 @@ public class ModItems {
             () -> new BeskarArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.BOOTS, new Item.Properties().fireResistant()));
 
     public static final RegistryObject<Item> BESKAR_SWORD = ITEMS.register("beskar_sword",
-            () -> new SwordItem(ModToolTiers.BESKAR, 3, -2.4F, new Item.Properties().fireResistant()));
+            () -> new SwordItem(ModToolTiers.BESKAR, 6, -2.3F, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> BESKAR_PICKAXE = ITEMS.register("beskar_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.BESKAR, 1, -2.8F, new Item.Properties().fireResistant()));
+            () -> new PickaxeItem(ModToolTiers.BESKAR, 3, -2.7F, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> BESKAR_AXE = ITEMS.register("beskar_axe",
-            () -> new AxeItem(ModToolTiers.BESKAR, 5.0F, -3.0F, new Item.Properties().fireResistant()));
+            () -> new AxeItem(ModToolTiers.BESKAR, 8.0F, -3.0F, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> BESKAR_SHOVEL = ITEMS.register("beskar_shovel",
-            () -> new ShovelItem(ModToolTiers.BESKAR, 1.5F, -3.0F, new Item.Properties().fireResistant()));
+            () -> new ShovelItem(ModToolTiers.BESKAR, 3.5F, -2.9F, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> BESKAR_HOE = ITEMS.register("beskar_hoe",
-            () -> new HoeItem(ModToolTiers.BESKAR, -4, 0.0F, new Item.Properties().fireResistant()));
+            () -> new HoeItem(ModToolTiers.BESKAR, -2, 0.0F, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> BESKAR_SPEAR = ITEMS.register("beskar_spear",
+            () -> new BeskarSpearItem(new Item.Properties().fireResistant()));
 
     private ModItems() {
     }

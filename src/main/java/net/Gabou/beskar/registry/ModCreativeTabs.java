@@ -22,6 +22,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.BESKAR_CHESTPLATE.get());
                         output.accept(ModItems.BESKAR_LEGGINGS.get());
                         output.accept(ModItems.BESKAR_BOOTS.get());
+                        output.accept(ModItems.BESKAR_SPEAR.get());
                         output.accept(ModItems.BESKAR_SWORD.get());
                         output.accept(ModItems.BESKAR_PICKAXE.get());
                         output.accept(ModItems.BESKAR_AXE.get());
