@@ -151,6 +151,9 @@ dependencies {
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     implementation fg.deobf("software.bernie.geckolib:geckolib-forge-${minecraft_version}:${geckolib_version}")
+    runtimeOnly(fg.deobf("curse.maven:jade-324717:6271651"))
+    implementation fg.deobf("curse.maven:timeless-and-classics-zero-1028108:7745481")
+    implementation fg.deobf("curse.maven:warium-1123901:7629932")
 
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
