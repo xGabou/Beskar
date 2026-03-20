@@ -2,7 +2,8 @@
   "replace": false,
   "values": [
     "beskar:beskar_ore",
-    "beskar:beskar_blast_furnace"
+    "beskar:beskar_blast_furnace",
+    "beskar:toxic_green_crystal_cluster"
   ]
 }
 

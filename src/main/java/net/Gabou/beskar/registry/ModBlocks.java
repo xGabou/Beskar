@@ -32,6 +32,14 @@ public class ModBlocks {
                     .strength(2.8F)
                     .sound(SoundType.NETHERITE_BLOCK)));
 
+    public static final RegistryObject<Block> TOXIC_GREEN_CRYSTAL_CLUSTER = BLOCKS.register("toxic_green_crystal_cluster",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
+                    .mapColor(MapColor.COLOR_LIGHT_GREEN)
+                    .strength(2.0F, 3.0F)
+                    .lightLevel(state -> 11)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()));
+
     private ModBlocks() {
     }
 

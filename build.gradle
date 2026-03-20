@@ -173,6 +173,7 @@ dependencies {
     implementation fg.deobf("maven.modrinth:kotlin-for-forge:Zsh14XeQ")
     implementation fg.deobf("maven.modrinth:valkyrien-skies:DiPIynfN")
     implementation fg.deobf("maven.modrinth:cosmic-horizons-cosmos:HhC4bL9S")
+    implementation fg.deobf("curse.maven:xray-neo-forge-fabric-1414116:7382929")
 
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime

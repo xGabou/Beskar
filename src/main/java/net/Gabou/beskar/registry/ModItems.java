@@ -26,6 +26,7 @@ public class ModItems {
     public static final RegistryObject<Item> BESKAR_ORE = registerBlockItem("beskar_ore", ModBlocks.BESKAR_ORE);
     public static final RegistryObject<Item> BESKAR_BLAST_FURNACE = registerBlockItem("beskar_blast_furnace", ModBlocks.BESKAR_BLAST_FURNACE);
     public static final RegistryObject<Item> BESKAR_WORKBENCH = registerBlockItem("beskar_workbench", ModBlocks.BESKAR_WORKBENCH);
+    public static final RegistryObject<Item> TOXIC_GREEN_CRYSTAL_CLUSTER = registerBlockItem("toxic_green_crystal_cluster", ModBlocks.TOXIC_GREEN_CRYSTAL_CLUSTER);
 
     public static final RegistryObject<Item> BESKAR_HELMET = ITEMS.register("beskar_helmet",
             () -> new BeskarArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));

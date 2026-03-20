@@ -13,6 +13,7 @@
   "item.beskar.beskar_shovel": "Beskar Shovel",
   "item.beskar.beskar_hoe": "Beskar Hoe",
   "block.beskar.beskar_ore": "Beskar Ore",
+  "block.beskar.toxic_green_crystal_cluster": "Toxic Green Crystal Cluster",
   "block.beskar.beskar_blast_furnace": "Beskar Blast Furnace",
   "block.beskar.beskar_workbench": "Beskar Workbench",
   "container.beskar.beskar_blast_furnace": "Beskar Blast Furnace",
@@ -26,6 +27,7 @@
   "advancements.beskar.arsenal_of_clan_vizsla.title": "Arsenal of Clan Vizsla",
   "advancements.beskar.arsenal_of_clan_vizsla.description": "Carry every Beskar tool and weapon at once.",
   "advancements.beskar.mythosaur_hunter.title": "Mythosaur Hunter",
-  "advancements.beskar.mythosaur_hunter.description": "Defeat an enemy with a thrown Beskar spear."
+  "advancements.beskar.mythosaur_hunter.description": "Defeat an enemy with a thrown Beskar spear.",
+  "effect.beskar.toxic_contamination": "Toxic Contamination"
 }
 

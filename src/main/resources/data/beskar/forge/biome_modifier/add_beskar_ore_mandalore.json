@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#customplanets:is_mandalore",
+  "features": [
+    "beskar:beskar_ore_placed"
+  ],
+  "step": "underground_ores"
+}
+

@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#customplanets:is_mandalore",
+  "features": [
+    "beskar:toxic_green_crystal_cluster_placed"
+  ],
+  "step": "underground_decoration"
+}
+

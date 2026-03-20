@@ -11,9 +11,11 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.Gabou.beskar.api.hazard.HazardHelmetImmunityRegistry;
 import net.Gabou.beskar.registry.ModBlockEntities;
 import net.Gabou.beskar.registry.ModBlocks;
 import net.Gabou.beskar.registry.ModCreativeTabs;
+import net.Gabou.beskar.registry.ModEffects;
 import net.Gabou.beskar.registry.ModItems;
 import org.slf4j.Logger;
 import software.bernie.geckolib.GeckoLib;
@@ -33,7 +35,9 @@ public class Beskar {
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModItems.register(modEventBus);
+        ModEffects.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
+        HazardHelmetImmunityRegistry.bootstrapDefaults();
 
         MinecraftForge.EVENT_BUS.register(this);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
