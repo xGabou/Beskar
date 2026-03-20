@@ -27,7 +27,11 @@ public final class MandaloreHazardService {
             return;
         }
 
-        if (entity instanceof ServerPlayer player && (player.isCreative() || player.isSpectator())) {
+        if (!(entity instanceof ServerPlayer player)) {
+            return;
+        }
+
+        if (player.isCreative() || player.isSpectator()) {
             return;
         }
 

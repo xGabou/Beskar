@@ -1,9 +1,72 @@
 {
+  "planet_data": {
+    "solar_system": {
+      "object_name": "Solar System",
+      "x": 0,
+      "y": 620,
+      "z": 0,
+      "yaw": 0,
+      "pitch": 0,
+      "roll": 0,
+      "scale": 920,
+      "texture_id": "earth",
+      "collision": true,
+      "opaque": true,
+      "travel_to": "cosmos:solar_system",
+      "glowing": false,
+      "ringed": false
+    },
+    "earth": {
+      "object_name": "Earth",
+      "x": -1800,
+      "y": 420,
+      "z": 900,
+      "yaw": -7,
+      "pitch": 7,
+      "roll": 7,
+      "scale": 760,
+      "texture_id": "earth",
+      "inverse_texture_id": "night_earth",
+      "collision": true,
+      "opaque": true,
+      "atmosphere_color": {
+        "r": 102,
+        "g": 178,
+        "b": 255,
+        "alpha": 38
+      },
+      "travel_to": "minecraft:overworld",
+      "glowing": false,
+      "ringed": false
+    },
+    "kamino": {
+      "object_name": "Kamino",
+      "x": 1700,
+      "y": 360,
+      "z": -1300,
+      "yaw": -5,
+      "pitch": 8,
+      "roll": -3,
+      "scale": 680,
+      "texture_id": "kamino",
+      "collision": true,
+      "opaque": true,
+      "atmosphere_color": {
+        "r": 100,
+        "g": 160,
+        "b": 255,
+        "alpha": 0
+      },
+      "travel_to": "customplanets:planet_kamino",
+      "glowing": false,
+      "ringed": false
+    }
+  },
   "attached_dimention_id": "customplanets:planet_mandalore",
   "dimensional_data": {
     "dimension_type": "planet",
     "weather": false,
-    "clouds": false,
+    "clouds": true,
     "sky_objects": false,
     "gravity": 96,
     "air_resistance": 0.98,

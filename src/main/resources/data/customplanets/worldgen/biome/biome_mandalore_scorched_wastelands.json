@@ -62,26 +62,7 @@
     "axolotls": [],
     "creature": [],
     "misc": [],
-    "monster": [
-      {
-        "type": "minecraft:husk",
-        "weight": 65,
-        "minCount": 2,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:pillager",
-        "weight": 35,
-        "minCount": 2,
-        "maxCount": 5
-      },
-      {
-        "type": "minecraft:spider",
-        "weight": 20,
-        "minCount": 1,
-        "maxCount": 3
-      }
-    ],
+    "monster": [],
     "underground_water_creature": [],
     "water_ambient": [],
     "water_creature": []

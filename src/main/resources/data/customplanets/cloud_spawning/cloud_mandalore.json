@@ -1,0 +1,41 @@
+{
+  "type": "customplanets:cloud_mandalore",
+  "exist_ticks": {
+    "type": "minecraft:biased_to_bottom",
+    "value": {
+      "max_inclusive": 84000,
+      "min_inclusive": 60000
+    }
+  },
+  "grow_ticks": {
+    "type": "minecraft:uniform",
+    "value": {
+      "max_inclusive": 9000,
+      "min_inclusive": 5500
+    }
+  },
+  "moves_to_player": true,
+  "order_weight": 900,
+  "radius": {
+    "type": "minecraft:biased_to_bottom",
+    "value": {
+      "max_inclusive": 9500,
+      "min_inclusive": 6500
+    }
+  },
+  "speed": {
+    "type": "minecraft:uniform",
+    "value": {
+      "max_exclusive": 0.06,
+      "min_inclusive": 0.018
+    }
+  },
+  "stretch_factor": {
+    "type": "minecraft:uniform",
+    "value": {
+      "max_exclusive": 0.5,
+      "min_inclusive": 0.25
+    }
+  },
+  "weight": 10
+}
