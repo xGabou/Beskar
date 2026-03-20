@@ -1,4 +1,10 @@
 {
+  "forge:conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "lightsabers"
+    }
+  ],
   "type": "forge:remove_features",
   "biomes": "customplanets:biome_kamino",
   "features": [

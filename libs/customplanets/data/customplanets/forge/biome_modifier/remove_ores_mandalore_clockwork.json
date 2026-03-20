@@ -1,4 +1,10 @@
 {
+  "forge:conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "vs_clockwork"
+    }
+  ],
   "type": "forge:remove_features",
   "biomes": "#customplanets:is_mandalore",
   "features": [
