@@ -44,8 +44,8 @@
       "minecraft:spring_lava"
     ],
     [
-      "minecraft:patch_dead_bush",
-      "minecraft:glow_lichen"
+      "minecraft:glow_lichen",
+      "minecraft:patch_dead_bush"
     ]
   ],
   "has_precipitation": false,
