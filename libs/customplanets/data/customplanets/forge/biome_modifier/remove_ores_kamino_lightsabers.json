@@ -1,0 +1,11 @@
+{
+  "type": "forge:remove_features",
+  "biomes": "customplanets:biome_kamino",
+  "features": [
+    "lightsabers:ore_crystal_placed"
+  ],
+  "steps": [
+    "underground_ores",
+    "underground_decoration"
+  ]
+}

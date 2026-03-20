@@ -1,0 +1,13 @@
+{
+  "type": "forge:remove_features",
+  "biomes": "customplanets:biome_kamino",
+  "features": [
+    "create:zinc_ore",
+    "create:striated_ores_overworld",
+    "create:striated_ores_nether"
+  ],
+  "steps": [
+    "underground_ores",
+    "underground_decoration"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "attached_dimention_id": "cosmos:alpha_system",
+  "dimensional_data": {
+    "dimension_type": "space",
+    "weather": false,
+    "clouds": false,
+    "sky_objects": false,
+    "gravity": 0,
+    "air_resistance": 1
+  },
+  "sky_data": {}
+}

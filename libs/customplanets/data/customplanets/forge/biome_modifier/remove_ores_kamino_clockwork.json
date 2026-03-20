@@ -1,0 +1,11 @@
+{
+  "type": "forge:remove_features",
+  "biomes": "customplanets:biome_kamino",
+  "features": [
+    "vs_clockwork:wanderlite_ore"
+  ],
+  "steps": [
+    "underground_ores",
+    "underground_decoration"
+  ]
+}

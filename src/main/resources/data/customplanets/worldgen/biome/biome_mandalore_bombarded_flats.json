@@ -1,0 +1,85 @@
+{
+  "temperature_modifier": "none",
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:canyon"
+    ]
+  },
+  "downfall": 0.0,
+  "effects": {
+    "fog_color": 5855577,
+    "grass_color_modifier": "none",
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2,
+      "sound": "minecraft:ambient.nether_wastes.mood",
+      "tick_delay": 6000
+    },
+    "sky_color": 7304056,
+    "water_color": 3486976,
+    "water_fog_color": 2039583
+  },
+  "features": [
+    [],
+    [
+      "minecraft:lake_lava_underground",
+      "minecraft:lake_lava_surface"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:ore_gravel",
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_gold"
+    ],
+    [
+      "minecraft:disk_sand",
+      "minecraft:disk_gravel"
+    ],
+    [
+      "minecraft:spring_lava"
+    ],
+    [
+      "minecraft:patch_dead_bush"
+    ]
+  ],
+  "has_precipitation": false,
+  "precipitation": "none",
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [
+      {
+        "type": "minecraft:zombie",
+        "weight": 45,
+        "minCount": 2,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:pillager",
+        "weight": 30,
+        "minCount": 2,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:phantom",
+        "weight": 8,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 1.9,
+  "precipitation_tick": 0.0
+}
+

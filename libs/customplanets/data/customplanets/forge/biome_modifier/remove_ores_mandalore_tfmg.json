@@ -1,0 +1,18 @@
+{
+  "type": "forge:remove_features",
+  "biomes": "#customplanets:is_mandalore",
+  "features": [
+    "tfmg:lead_ore",
+    "tfmg:lithium_ore",
+    "tfmg:nickel_ore",
+    "tfmg:oil_deposit",
+    "tfmg:oil_well",
+    "tfmg:tfmg_striated_ores_overworld",
+    "tfmg:tfmg_striated_ores_nether"
+  ],
+  "steps": [
+    "underground_ores",
+    "underground_decoration"
+  ]
+}
+

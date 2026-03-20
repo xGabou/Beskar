@@ -1,0 +1,12 @@
+{
+  "type": "forge:remove_features",
+  "biomes": "#customplanets:is_mandalore",
+  "features": [
+    "vs_clockwork:wanderlite_ore"
+  ],
+  "steps": [
+    "underground_ores",
+    "underground_decoration"
+  ]
+}
+

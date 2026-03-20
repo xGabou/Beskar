@@ -1,0 +1,12 @@
+{
+  "attached_dimention_id": "cosmos:plutowastelands",
+  "dimensional_data": {
+    "dimension_type": "planet",
+    "weather": false,
+    "clouds": false,
+    "sky_objects": false,
+    "gravity": 100,
+    "air_resistance": 0.99
+  },
+  "sky_data": {}
+}

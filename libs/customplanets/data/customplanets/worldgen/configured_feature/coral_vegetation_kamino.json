@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      "customplanets:coral_tree_kamino",
+      "customplanets:coral_claw_kamino",
+      "customplanets:coral_mushroom_kamino"
+    ]
+  }
+}

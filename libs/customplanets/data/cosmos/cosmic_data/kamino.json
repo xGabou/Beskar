@@ -1,0 +1,22 @@
+{
+  "attached_dimention_id": "customplanets:planet_kamino",
+  "dimensional_data": {
+    "dimension_type": "planet",
+    "weather": false,
+    "clouds": true,
+    "sky_objects": false,
+    "gravity": 100,
+    "air_resistance": 0.99,
+    "atmospheric_data": {
+      "atmosphere_y": 3450,
+      "travel_to": "cosmos:solar_system",
+      "origin_x": 70000,
+      "origin_y": 1000,
+      "origin_z": -40000,
+      "overlay_texture_id": "moon_bar",
+      "shipbit_y": 23,
+      "ship_min_y": 3450
+    }
+  },
+  "sky_data": {}
+}

@@ -1,0 +1,11 @@
+{
+  "type": "customplanets:type_kamino",
+  "generator": {
+    "type": "noise",
+    "biome_source": {
+      "type": "fixed",
+      "biome": "customplanets:biome_kamino"
+    },
+    "settings": "customplanets:settings_kamino"
+  }
+}

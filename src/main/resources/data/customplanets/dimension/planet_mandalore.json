@@ -1,0 +1,133 @@
+{
+  "type": "customplanets:type_mandalore",
+  "generator": {
+    "type": "noise",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "customplanets:biome_mandalore_scorched_wastelands",
+          "parameters": {
+            "temperature": 1.0,
+            "humidity": 0.0,
+            "continentalness": 0.5,
+            "erosion": -0.35,
+            "weirdness": -0.7,
+            "depth": 0.0,
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "customplanets:biome_mandalore_ash_dunes",
+          "parameters": {
+            "temperature": 1.2,
+            "humidity": -0.2,
+            "continentalness": 0.15,
+            "erosion": 0.3,
+            "weirdness": 0.1,
+            "depth": 0.0,
+            "offset": 0.02
+          }
+        },
+        {
+          "biome": "customplanets:biome_mandalore_glassed_desert",
+          "parameters": {
+            "temperature": 1.3,
+            "humidity": -0.4,
+            "continentalness": 0.65,
+            "erosion": -0.1,
+            "weirdness": 0.6,
+            "depth": 0.0,
+            "offset": 0.05
+          }
+        },
+        {
+          "biome": "customplanets:biome_mandalore_ruined_city",
+          "parameters": {
+            "temperature": 0.9,
+            "humidity": 0.1,
+            "continentalness": 0.35,
+            "erosion": -0.5,
+            "weirdness": -0.1,
+            "depth": 0.0,
+            "offset": 0.12
+          }
+        },
+        {
+          "biome": "customplanets:biome_mandalore_cracked_basin",
+          "parameters": {
+            "temperature": 0.95,
+            "humidity": -0.1,
+            "continentalness": -0.35,
+            "erosion": 0.45,
+            "weirdness": -0.35,
+            "depth": 0.0,
+            "offset": -0.2
+          }
+        },
+        {
+          "biome": "customplanets:biome_mandalore_bombarded_flats",
+          "parameters": {
+            "temperature": 1.0,
+            "humidity": -0.25,
+            "continentalness": 0.05,
+            "erosion": 0.8,
+            "weirdness": 0.0,
+            "depth": 0.0,
+            "offset": -0.03
+          }
+        },
+        {
+          "biome": "customplanets:biome_mandalore_dead_forge_fields",
+          "parameters": {
+            "temperature": 1.1,
+            "humidity": -0.3,
+            "continentalness": 0.4,
+            "erosion": -0.2,
+            "weirdness": 0.35,
+            "depth": 0.0,
+            "offset": 0.08
+          }
+        },
+        {
+          "biome": "customplanets:biome_mandalore_toxic_ruins",
+          "parameters": {
+            "temperature": 0.85,
+            "humidity": 0.5,
+            "continentalness": 0.2,
+            "erosion": 0.2,
+            "weirdness": -0.5,
+            "depth": 0.0,
+            "offset": -0.05
+          }
+        },
+        {
+          "biome": "customplanets:biome_mandalore_blackened_canyon",
+          "parameters": {
+            "temperature": 0.9,
+            "humidity": -0.15,
+            "continentalness": 0.55,
+            "erosion": -0.85,
+            "weirdness": 0.85,
+            "depth": 0.0,
+            "offset": 0.18
+          }
+        },
+        {
+          "biome": "customplanets:biome_mandalore_raider_zones",
+          "parameters": {
+            "temperature": 1.05,
+            "humidity": -0.05,
+            "continentalness": 0.25,
+            "erosion": -0.65,
+            "weirdness": 0.2,
+            "depth": 0.0,
+            "offset": 0.14
+          }
+        }
+      ]
+    },
+    "settings": "minecraft:overworld"
+  }
+}
+

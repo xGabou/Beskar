@@ -1,0 +1,14 @@
+{
+  "type": "forge:remove_features",
+  "biomes": "#customplanets:is_mandalore",
+  "features": [
+    "cosmos:concentratedsulpherore",
+    "cosmos:frozen_titaniumore",
+    "cosmos:siliconedmoonclay"
+  ],
+  "steps": [
+    "underground_ores",
+    "underground_decoration"
+  ]
+}
+

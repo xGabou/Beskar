@@ -1,0 +1,22 @@
+{
+  "type": "forge:remove_features",
+  "biomes": "#customplanets:is_mandalore",
+  "features": [
+    "crusty_chunks:uranium_ore",
+    "crusty_chunks:bauxite",
+    "crusty_chunks:beryllium_ore",
+    "crusty_chunks:lead_ore",
+    "crusty_chunks:deepslate_lead_ore",
+    "crusty_chunks:lithium_ore",
+    "crusty_chunks:nickel_ore",
+    "crusty_chunks:pyrochlore_ore",
+    "crusty_chunks:sulfur_ore",
+    "crusty_chunks:tar",
+    "crusty_chunks:zinc_ore"
+  ],
+  "steps": [
+    "underground_ores",
+    "underground_decoration"
+  ]
+}
+

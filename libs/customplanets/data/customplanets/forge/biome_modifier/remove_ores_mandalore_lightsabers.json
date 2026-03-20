@@ -1,0 +1,12 @@
+{
+  "type": "forge:remove_features",
+  "biomes": "#customplanets:is_mandalore",
+  "features": [
+    "lightsabers:ore_crystal_placed"
+  ],
+  "steps": [
+    "underground_ores",
+    "underground_decoration"
+  ]
+}
+

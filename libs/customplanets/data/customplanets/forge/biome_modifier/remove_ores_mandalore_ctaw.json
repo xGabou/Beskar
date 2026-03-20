@@ -1,0 +1,15 @@
+{
+  "type": "forge:remove_features",
+  "biomes": "#customplanets:is_mandalore",
+  "features": [
+    "create_the_air_wars:sulfur_ore",
+    "create_the_air_wars:titanium_ore",
+    "create_the_air_wars:deepslatetitaniumore",
+    "create_the_air_wars:deepdlatesulfurore"
+  ],
+  "steps": [
+    "underground_ores",
+    "underground_decoration"
+  ]
+}
+

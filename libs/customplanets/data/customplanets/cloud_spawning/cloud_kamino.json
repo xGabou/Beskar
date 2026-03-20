@@ -1,0 +1,41 @@
+{
+  "type": "customplanets:cloud_kamino",
+  "exist_ticks": {
+    "type": "minecraft:biased_to_bottom",
+    "value": {
+      "max_inclusive": 96000,
+      "min_inclusive": 72000
+    }
+  },
+  "grow_ticks": {
+    "type": "minecraft:uniform",
+    "value": {
+      "max_inclusive": 8000,
+      "min_inclusive": 5000
+    }
+  },
+  "moves_to_player": true,
+  "order_weight": 1000,
+  "radius": {
+    "type": "minecraft:biased_to_bottom",
+    "value": {
+      "max_inclusive": 10000,
+      "min_inclusive": 7000
+    }
+  },
+  "speed": {
+    "type": "minecraft:uniform",
+    "value": {
+      "max_exclusive": 0.08,
+      "min_inclusive": 0.02
+    }
+  },
+  "stretch_factor": {
+    "type": "minecraft:uniform",
+    "value": {
+      "max_exclusive": 0.4,
+      "min_inclusive": 0.2
+    }
+  },
+  "weight": 20
+}
