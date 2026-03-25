@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#customplanets:is_mandalore",
+  "features": [
+    "beskar:exposed_stone_scar_placed"
+  ],
+  "step": "local_modifications"
+}

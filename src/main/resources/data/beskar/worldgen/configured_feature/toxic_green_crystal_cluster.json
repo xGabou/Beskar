@@ -2,7 +2,7 @@
   "type": "minecraft:ore",
   "config": {
     "discard_chance_on_air_exposure": 0.0,
-    "size": 5,
+    "size": 24,
     "targets": [
       {
         "target": {
@@ -10,7 +10,7 @@
           "tag": "minecraft:stone_ore_replaceables"
         },
         "state": {
-          "Name": "beskar:toxic_green_crystal_cluster"
+          "Name": "beskar:green_crystal_block"
         }
       },
       {
@@ -19,7 +19,7 @@
           "tag": "minecraft:deepslate_ore_replaceables"
         },
         "state": {
-          "Name": "beskar:toxic_green_crystal_cluster"
+          "Name": "beskar:green_crystal_block"
         }
       }
     ]

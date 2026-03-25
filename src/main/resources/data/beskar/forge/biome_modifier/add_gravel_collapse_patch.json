@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#customplanets:is_mandalore",
+  "features": [
+    "beskar:gravel_collapse_patch_placed"
+  ],
+  "step": "local_modifications"
+}

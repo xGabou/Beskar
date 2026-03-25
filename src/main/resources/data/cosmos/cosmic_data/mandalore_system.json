@@ -1,0 +1,99 @@
+{
+  "planet_data": {
+    "mandalore": {
+      "object_name": "Mandalore",
+      "x": 0,
+      "y": 580,
+      "z": 0,
+      "yaw": -9,
+      "pitch": 6,
+      "roll": -2,
+      "scale": 690,
+      "texture_id": "mandalore",
+      "collision": true,
+      "opaque": true,
+      "atmosphere_color": {
+        "r": 121,
+        "g": 101,
+        "b": 82,
+        "alpha": 0
+      },
+      "travel_to": "customplanets:planet_mandalore",
+      "glowing": false,
+      "ringed": false
+    }
+  },
+  "attached_dimention_id": "cosmos:mandalore_system",
+  "local_id": "Mandalore System",
+  "skybox_data": {
+    "texture_id": "skybox_solar",
+    "alpha": 255,
+    "yaw": 23,
+    "pitch": 23,
+    "roll": 23
+  },
+  "dimensional_data": {
+    "dimension_type": "space",
+    "weather": false,
+    "clouds": false,
+    "sky_objects": false,
+    "gravity": 0,
+    "air_resistance": 1
+  },
+  "gui_data": {
+    "mandalore_system": {
+      "object_data": {
+        "mandalore": {
+          "texture_id": "mandalore",
+          "scale": 16,
+          "ponder_scale": 58,
+          "yaw": -5,
+          "pitch": -180,
+          "roll": 3,
+          "yaw_speed": 0.23,
+          "pitch_speed": 0,
+          "roll_speed": 0,
+          "travel_x": 0,
+          "travel_y": 1000,
+          "travel_z": 1400,
+          "unlocking_dimension": "none",
+          "atmosphere": {
+            "text": "Thin",
+            "color": "gray"
+          },
+          "name": {
+            "text": "Mandalore",
+            "color": "gold"
+          },
+          "type": {
+            "text": "Ruined",
+            "color": "dark_gray"
+          },
+          "conditions": {
+            "text": "Hostile",
+            "color": "red"
+          },
+          "size": {
+            "text": "Large",
+            "color": "yellow"
+          },
+          "category": {
+            "text": "Wasteland",
+            "color": "gray"
+          },
+          "life": 0.05,
+          "ringed": false
+        }
+      },
+      "travel_dimension": "cosmos:mandalore_system",
+      "origin_x": 0,
+      "origin_y": 1000,
+      "origin_z": 2600,
+      "unlocking_dimension": "none",
+      "background": "solar_bg",
+      "title": "Mandalore System",
+      "order": -3
+    }
+  },
+  "sky_data": {}
+}

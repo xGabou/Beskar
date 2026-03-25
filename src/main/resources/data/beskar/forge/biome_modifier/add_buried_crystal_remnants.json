@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#customplanets:is_mandalore",
+  "features": [
+    "beskar:buried_crystal_remnants_placed"
+  ],
+  "step": "underground_ores"
+}

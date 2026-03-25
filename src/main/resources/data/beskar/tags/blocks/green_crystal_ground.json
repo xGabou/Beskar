@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "beskar:green_crystal_block",
+    "beskar:green_crystal_block_floor",
+    "beskar:green_crystal_block_floor_cracked"
+  ]
+}

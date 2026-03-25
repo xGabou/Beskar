@@ -13,6 +13,8 @@ plugins {
     id 'eclipse'
     id 'idea'
     id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
+    id 'com.matthewprenger.cursegradle' version '1.4.0' // CurseForge uploader
+    id "com.modrinth.minotaur" version "2.8.10" // Modrinth uploader
 }
 
 apply plugin: 'org.spongepowered.mixin'
@@ -175,6 +177,7 @@ dependencies {
     implementation fg.deobf("maven.modrinth:cosmic-horizons-cosmos:HhC4bL9S")
     implementation fg.deobf("curse.maven:xray-neo-forge-fabric-1414116:7382929")
     implementation fg.deobf("curse.maven:simple-clouds-1121215:6928978")
+    implementation fg.deobf("curse.maven:embeddium-908741:5681725")
 
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
@@ -232,4 +235,53 @@ tasks.named('jar', Jar).configure {
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+def modrinthToken = System.getenv("MODRINTH_TOKEN")?.trim()
+def curseforgeToken = System.getenv("CURSEFORGE_TOKEN")?.trim()
+
+if (modrinthToken) {
+    modrinth {
+        token = modrinthToken
+        projectId = "ArFPGLWd" // from your Modrinth project URL
+        versionNumber = "Forge-${project.version}"
+        versionName = "Beskar ${mod_version}"
+        changelog = rootProject.file("docs/public/BeskarChangelog.md").text
+        gameVersions = ["1.20.1"]
+        loaders = ["forge"]
+        versionType = "release"
+        dependencies {
+        }
+        uploadFile = file("build/libs/${archivesBaseName}-${version}.jar")
+    }
+} else {
+    logger.lifecycle("Skipping Modrinth config for ${project.path}: MODRINTH_TOKEN is not set.")
+    tasks.configureEach {
+        if (name.toLowerCase().contains("modrinth")) {
+            enabled = false
+        }
+    }
+}
+
+if (curseforgeToken) {
+    curseforge {
+        apiKey = curseforgeToken
+
+        project {
+            id = "1494626"
+            changelog = rootProject.file("docs/public/BeskarChangelog.md")
+            releaseType = "release" // options: alpha, beta, release
+            addGameVersion "1.20.1"
+            addGameVersion "Forge"
+            mainArtifact(file("build/libs/${archivesBaseName}-${version}.jar")) {
+                displayName = "Forge-${version}"
+            }
+        }
+    }
+} else {
+    logger.lifecycle("Skipping CurseForge config for ${project.path}: CURSEFORGE_TOKEN is not set.")
+    tasks.configureEach {
+        if (name.toLowerCase().contains("curseforge")) {
+            enabled = false
+        }
+    }
 }

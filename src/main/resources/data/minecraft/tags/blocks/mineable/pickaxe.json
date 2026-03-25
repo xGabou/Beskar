@@ -4,7 +4,11 @@
     "beskar:beskar_ore",
     "beskar:beskar_blast_furnace",
     "beskar:beskar_workbench",
-    "beskar:toxic_green_crystal_cluster"
+    "beskar:toxic_green_crystal_cluster",
+    "beskar:green_crystal_block",
+    "beskar:green_crystal_block_floor",
+    "beskar:green_crystal_block_floor_cracked",
+    "beskar:green_crystal_cluster"
   ]
 }
 

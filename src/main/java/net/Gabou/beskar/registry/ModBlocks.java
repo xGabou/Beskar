@@ -2,6 +2,7 @@ package net.Gabou.beskar.registry;
 
 import net.Gabou.beskar.Beskar;
 import net.Gabou.beskar.block.BeskarBlastFurnaceBlock;
+import net.Gabou.beskar.block.GreenCrystalClusterBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CraftingTableBlock;
@@ -38,6 +39,35 @@ public class ModBlocks {
                     .strength(2.0F, 3.0F)
                     .lightLevel(state -> 11)
                     .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GREEN_CRYSTAL_BLOCK = BLOCKS.register("green_crystal_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
+                    .mapColor(MapColor.COLOR_LIGHT_GREEN)
+                    .strength(1.6F, 2.8F)
+                    .sound(SoundType.GLASS)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GREEN_CRYSTAL_BLOCK_FLOOR = BLOCKS.register("green_crystal_block_floor",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
+                    .mapColor(MapColor.COLOR_LIGHT_GREEN)
+                    .strength(1.4F, 2.5F)
+                    .sound(SoundType.GLASS)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GREEN_CRYSTAL_BLOCK_FLOOR_CRACKED = BLOCKS.register("green_crystal_block_floor_cracked",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
+                    .mapColor(MapColor.COLOR_LIGHT_GREEN)
+                    .strength(1.2F, 2.2F)
+                    .sound(SoundType.GLASS)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GREEN_CRYSTAL_CLUSTER = BLOCKS.register("green_crystal_cluster",
+            () -> new GreenCrystalClusterBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_CLUSTER)
+                    .mapColor(MapColor.COLOR_LIGHT_GREEN)
+                    .strength(0.4F, 0.8F)
+                    .sound(SoundType.GLASS)
+                    .noCollission()
                     .requiresCorrectToolForDrops()));
 
     private ModBlocks() {

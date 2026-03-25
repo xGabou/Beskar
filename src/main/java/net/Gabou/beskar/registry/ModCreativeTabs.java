@@ -22,7 +22,10 @@ public class ModCreativeTabs {
                         output.accept(ModItems.BESKAR_INGOT.get());
                         output.accept(ModItems.BESKAR_COAL.get());
                         output.accept(ModItems.BESKAR_ORE.get());
-                        output.accept(ModItems.TOXIC_GREEN_CRYSTAL_CLUSTER.get());
+                        output.accept(ModItems.GREEN_CRYSTAL_BLOCK.get());
+                        output.accept(ModItems.GREEN_CRYSTAL_BLOCK_FLOOR.get());
+                        output.accept(ModItems.GREEN_CRYSTAL_BLOCK_FLOOR_CRACKED.get());
+                        output.accept(ModItems.GREEN_CRYSTAL_CLUSTER.get());
                         output.accept(ModItems.BESKAR_BLAST_FURNACE.get());
                         output.accept(ModItems.BESKAR_WORKBENCH.get());
                         output.accept(ModItems.BESKAR_HELMET.get());

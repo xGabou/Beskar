@@ -10,7 +10,7 @@
           "tag": "minecraft:stone_ore_replaceables"
         },
         "state": {
-          "Name": "minecraft:iron_ore"
+          "Name": "minecraft:coal_ore"
         }
       },
       {
@@ -19,7 +19,7 @@
           "tag": "minecraft:deepslate_ore_replaceables"
         },
         "state": {
-          "Name": "minecraft:deepslate_iron_ore"
+          "Name": "minecraft:deepslate_coal_ore"
         }
       }
     ]

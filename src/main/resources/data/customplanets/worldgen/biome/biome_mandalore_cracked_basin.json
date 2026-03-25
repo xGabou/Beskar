@@ -8,17 +8,17 @@
   },
   "downfall": 0.0,
   "effects": {
-    "fog_color": 6250335,
+    "fog_color": 5263440,
     "grass_color_modifier": "none",
     "mood_sound": {
       "block_search_extent": 8,
-      "offset": 2,
+      "offset": 2.0,
       "sound": "minecraft:ambient.cave",
-      "tick_delay": 6000
+      "tick_delay": 5500
     },
-    "sky_color": 8026746,
-    "water_color": 3552822,
-    "water_fog_color": 2105376
+    "sky_color": 6908265,
+    "water_color": 2894892,
+    "water_fog_color": 1710618
   },
   "features": [
     [],
@@ -29,23 +29,12 @@
     [],
     [],
     [],
+    [],
+    [],
     [
-      "minecraft:ore_dirt",
-      "minecraft:ore_gravel",
-      "minecraft:ore_coal_lower",
-      "minecraft:ore_iron_small"
+      "minecraft:spring_lava"
     ],
-    [
-      "minecraft:disk_gravel"
-    ],
-    [
-      "minecraft:spring_lava",
-      "minecraft:spring_water"
-    ],
-    [
-      "minecraft:glow_lichen",
-      "minecraft:patch_dead_bush"
-    ]
+    []
   ],
   "has_precipitation": false,
   "precipitation": "none",
@@ -63,4 +52,3 @@
   "temperature": 1.6,
   "precipitation_tick": 0.0
 }
-

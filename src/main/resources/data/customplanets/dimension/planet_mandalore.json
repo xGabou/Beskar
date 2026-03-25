@@ -127,7 +127,7 @@
         }
       ]
     },
-    "settings": "minecraft:overworld"
+    "settings": "customplanets:settings_mandalore"
   }
 }
 

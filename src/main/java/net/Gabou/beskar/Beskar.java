@@ -1,6 +1,8 @@
 package net.Gabou.beskar;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -55,6 +57,9 @@ public class Beskar {
 
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            event.enqueueWork(() -> {
+                ItemBlockRenderTypes.setRenderLayer(ModBlocks.GREEN_CRYSTAL_CLUSTER.get(), RenderType.cutout());
+            });
             LOGGER.info("Beskar client setup complete.");
         }
     }
