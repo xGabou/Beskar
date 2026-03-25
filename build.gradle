@@ -1,23 +1,11 @@
-buildscript {
-    repositories {
-        // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
-        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
-    }
-}
-
 plugins {
     id 'eclipse'
     id 'idea'
     id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
+    id 'org.spongepowered.mixin' version '0.7.+'
     id 'com.matthewprenger.cursegradle' version '1.4.0' // CurseForge uploader
     id "com.modrinth.minotaur" version "2.8.10" // Modrinth uploader
 }
-
-apply plugin: 'org.spongepowered.mixin'
 
 group = mod_group_id
 version = mod_version
@@ -178,6 +166,11 @@ dependencies {
     implementation fg.deobf("curse.maven:xray-neo-forge-fabric-1414116:7382929")
     implementation fg.deobf("curse.maven:simple-clouds-1121215:6928978")
     implementation fg.deobf("curse.maven:embeddium-908741:5681725")
+    implementation fg.deobf("curse.maven:gabous-caves-1494710:7807474")
+    implementation fg.deobf("curse.maven:gabous-construct-for-star-wars-1494814:7809086")
+    implementation fg.deobf("curse.maven:citadel-331936:7476570")
+    implementation fg.deobf("curse.maven:mantle-74924:7563777")
+
 
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime

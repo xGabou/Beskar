@@ -1,7 +1,4 @@
 {
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "minecraft:block/crafting_table_top"
-  }
+  "parent": "minecraft:block/smithing_table"
 }
 

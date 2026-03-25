@@ -5,7 +5,7 @@ import net.Gabou.beskar.block.BeskarBlastFurnaceBlock;
 import net.Gabou.beskar.block.GreenCrystalClusterBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.CraftingTableBlock;
+import net.minecraft.world.level.block.SmithingTableBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -29,9 +29,10 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> BESKAR_WORKBENCH = BLOCKS.register("beskar_workbench",
-            () -> new CraftingTableBlock(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)
-                    .strength(2.8F)
-                    .sound(SoundType.NETHERITE_BLOCK)));
+            () -> new SmithingTableBlock(BlockBehaviour.Properties.copy(Blocks.SMITHING_TABLE)
+                    .strength(3.0F)
+                    .sound(SoundType.NETHERITE_BLOCK)
+                    .requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> TOXIC_GREEN_CRYSTAL_CLUSTER = BLOCKS.register("toxic_green_crystal_cluster",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
@@ -60,6 +61,13 @@ public class ModBlocks {
                     .mapColor(MapColor.COLOR_LIGHT_GREEN)
                     .strength(1.2F, 2.2F)
                     .sound(SoundType.GLASS)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> STONY_CRYSTAL = BLOCKS.register("stony_crystal",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TUFF)
+                    .mapColor(MapColor.STONE)
+                    .strength(2.2F, 3.5F)
+                    .sound(SoundType.STONE)
                     .requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> GREEN_CRYSTAL_CLUSTER = BLOCKS.register("green_crystal_cluster",
