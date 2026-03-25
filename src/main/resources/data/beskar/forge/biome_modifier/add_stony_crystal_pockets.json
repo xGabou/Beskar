@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#customplanets:is_mandalore",
+  "features": [
+    "beskar:stony_crystal_pockets_placed"
+  ],
+  "step": "underground_ores"
+}

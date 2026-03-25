@@ -25,6 +25,9 @@ public class ModCreativeTabs {
                         output.accept(ModItems.GREEN_CRYSTAL_BLOCK.get());
                         output.accept(ModItems.GREEN_CRYSTAL_BLOCK_FLOOR.get());
                         output.accept(ModItems.GREEN_CRYSTAL_BLOCK_FLOOR_CRACKED.get());
+                        output.accept(ModItems.DEEP_CRYSTAL.get());
+                        output.accept(ModItems.POLISHED_GLASS.get());
+                        output.accept(ModItems.OXIDIZED_CRYSTAL.get());
                         output.accept(ModItems.STONY_CRYSTAL.get());
                         output.accept(ModItems.GREEN_CRYSTAL_CLUSTER.get());
                         output.accept(ModItems.BESKAR_BLAST_FURNACE.get());

@@ -30,6 +30,9 @@ public class ModItems {
     public static final RegistryObject<Item> GREEN_CRYSTAL_BLOCK = registerBlockItem("green_crystal_block", ModBlocks.GREEN_CRYSTAL_BLOCK);
     public static final RegistryObject<Item> GREEN_CRYSTAL_BLOCK_FLOOR = registerBlockItem("green_crystal_block_floor", ModBlocks.GREEN_CRYSTAL_BLOCK_FLOOR);
     public static final RegistryObject<Item> GREEN_CRYSTAL_BLOCK_FLOOR_CRACKED = registerBlockItem("green_crystal_block_floor_cracked", ModBlocks.GREEN_CRYSTAL_BLOCK_FLOOR_CRACKED);
+    public static final RegistryObject<Item> DEEP_CRYSTAL = registerBlockItem("deep_crystal", ModBlocks.DEEP_CRYSTAL);
+    public static final RegistryObject<Item> POLISHED_GLASS = registerBlockItem("polished_glass", ModBlocks.POLISHED_GLASS);
+    public static final RegistryObject<Item> OXIDIZED_CRYSTAL = registerBlockItem("oxidized_crystal", ModBlocks.OXIDIZED_CRYSTAL);
     public static final RegistryObject<Item> STONY_CRYSTAL = registerBlockItem("stony_crystal", ModBlocks.STONY_CRYSTAL);
     public static final RegistryObject<Item> GREEN_CRYSTAL_CLUSTER = registerBlockItem("green_crystal_cluster", ModBlocks.GREEN_CRYSTAL_CLUSTER);
 

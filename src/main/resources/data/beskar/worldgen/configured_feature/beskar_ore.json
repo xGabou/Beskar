@@ -1,8 +1,8 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "discard_chance_on_air_exposure": 0.65,
-    "size": 2,
+    "discard_chance_on_air_exposure": 0.15,
+    "size": 5,
     "targets": [
       {
         "target": {
@@ -17,6 +17,24 @@
         "target": {
           "predicate_type": "minecraft:tag_match",
           "tag": "minecraft:deepslate_ore_replaceables"
+        },
+        "state": {
+          "Name": "beskar:beskar_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "beskar:stony_crystal"
+        },
+        "state": {
+          "Name": "beskar:beskar_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "beskar:deep_crystal"
         },
         "state": {
           "Name": "beskar:beskar_ore"

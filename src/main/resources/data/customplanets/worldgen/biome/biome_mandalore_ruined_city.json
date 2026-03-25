@@ -8,7 +8,7 @@
   },
   "downfall": 0.0,
   "effects": {
-    "fog_color": 3750201,
+    "fog_color": 4278351,
     "grass_color_modifier": "none",
     "mood_sound": {
       "block_search_extent": 8,
@@ -16,9 +16,9 @@
       "sound": "minecraft:ambient.soul_sand_valley.mood",
       "tick_delay": 4000
     },
-    "sky_color": 5329233,
-    "water_color": 2236962,
-    "water_fog_color": 1184274
+    "sky_color": 5658441,
+    "water_color": 2501171,
+    "water_fog_color": 1381653
   },
   "features": [
     [],

@@ -8,7 +8,7 @@
   },
   "downfall": 0.0,
   "effects": {
-    "fog_color": 4605510,
+    "fog_color": 5394767,
     "grass_color_modifier": "none",
     "mood_sound": {
       "block_search_extent": 8,
@@ -16,9 +16,9 @@
       "sound": "minecraft:ambient.nether_wastes.mood",
       "tick_delay": 5000
     },
-    "sky_color": 6513507,
-    "water_color": 2500134,
-    "water_fog_color": 1315860
+    "sky_color": 7100703,
+    "water_color": 3026988,
+    "water_fog_color": 1776669
   },
   "features": [
     [],

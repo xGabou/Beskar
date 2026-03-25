@@ -66,18 +66,6 @@
           }
         },
         {
-          "biome": "customplanets:biome_mandalore_bombarded_flats",
-          "parameters": {
-            "temperature": 1.0,
-            "humidity": -0.25,
-            "continentalness": 0.05,
-            "erosion": 0.8,
-            "weirdness": 0.0,
-            "depth": 0.0,
-            "offset": 0.03
-          }
-        },
-        {
           "biome": "customplanets:biome_mandalore_dead_forge_fields",
           "parameters": {
             "temperature": 1.1,
@@ -111,18 +99,6 @@
             "weirdness": 0.85,
             "depth": 0.0,
             "offset": 0.18
-          }
-        },
-        {
-          "biome": "customplanets:biome_mandalore_raider_zones",
-          "parameters": {
-            "temperature": 1.05,
-            "humidity": -0.05,
-            "continentalness": 0.25,
-            "erosion": -0.65,
-            "weirdness": 0.2,
-            "depth": 0.0,
-            "offset": 0.14
           }
         },
         {

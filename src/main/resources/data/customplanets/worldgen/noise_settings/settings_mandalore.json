@@ -640,36 +640,20 @@
                         {
                           "type": "minecraft:condition",
                           "if_true": {
-                            "type": "minecraft:noise_threshold",
-                            "noise": "customplanets:mandalore_debris",
-                            "min_threshold": 0.78,
-                            "max_threshold": 1000000.0
+                            "type": "minecraft:vertical_gradient",
+                            "random_name": "beskar:mandalore_crystal_floor_cutoff_surface",
+                            "true_at_and_below": {
+                              "absolute": 39
+                            },
+                            "false_at_and_above": {
+                              "absolute": 40
+                            }
                           },
                           "then_run": {
-                            "type": "minecraft:sequence",
-                            "sequence": [
-                              {
-                                "type": "minecraft:condition",
-                                "if_true": {
-                                  "type": "minecraft:noise_threshold",
-                                  "noise": "customplanets:mandalore_primary",
-                                  "min_threshold": -1000000.0,
-                                  "max_threshold": -0.15
-                                },
-                                "then_run": {
-                                  "type": "minecraft:block",
-                                  "result_state": {
-                                    "Name": "minecraft:stone"
-                                  }
-                                }
-                              },
-                              {
-                                "type": "minecraft:block",
-                                "result_state": {
-                                  "Name": "minecraft:gravel"
-                                }
-                              }
-                            ]
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "minecraft:stone"
+                            }
                           }
                         },
                         {
@@ -677,8 +661,23 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "customplanets:mandalore_debris",
-                            "min_threshold": 0.6,
-                            "max_threshold": 0.78
+                            "min_threshold": 0.94,
+                            "max_threshold": 1000000.0
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "minecraft:stone"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "customplanets:mandalore_debris",
+                            "min_threshold": 0.80,
+                            "max_threshold": 0.94
                           },
                           "then_run": {
                             "type": "minecraft:block",
@@ -690,10 +689,86 @@
                         {
                           "type": "minecraft:condition",
                           "if_true": {
-                            "type": "minecraft:noise_threshold",
-                            "noise": "customplanets:mandalore_primary",
-                            "min_threshold": -0.8,
-                            "max_threshold": 1000000.0
+                            "type": "minecraft:not",
+                            "invert": {
+                              "type": "minecraft:vertical_gradient",
+                              "random_name": "beskar:mandalore_mountains_surface",
+                              "true_at_and_below": {
+                                "absolute": 100
+                              },
+                              "false_at_and_above": {
+                                "absolute": 120
+                              }
+                            }
+                          },
+                          "then_run": {
+                            "type": "minecraft:sequence",
+                            "sequence": [
+                              {
+                                "type": "minecraft:condition",
+                                "if_true": {
+                                  "type": "minecraft:noise_threshold",
+                                  "noise": "customplanets:mandalore_oxidation",
+                                  "min_threshold": 0.68,
+                                  "max_threshold": 1000000.0
+                                },
+                                "then_run": {
+                                  "type": "minecraft:block",
+                                  "result_state": {
+                                    "Name": "beskar:oxidized_crystal"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "minecraft:condition",
+                                "if_true": {
+                                  "type": "minecraft:noise_threshold",
+                                  "noise": "customplanets:mandalore_variant",
+                                  "min_threshold": 0.90,
+                                  "max_threshold": 1000000.0
+                                },
+                                "then_run": {
+                                  "type": "minecraft:block",
+                                  "result_state": {
+                                    "Name": "beskar:green_crystal_block_floor_cracked"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "minecraft:condition",
+                                "if_true": {
+                                  "type": "minecraft:noise_threshold",
+                                  "noise": "customplanets:mandalore_variant",
+                                  "min_threshold": 0.18,
+                                  "max_threshold": 0.42
+                                },
+                                "then_run": {
+                                  "type": "minecraft:block",
+                                  "result_state": {
+                                    "Name": "beskar:stony_crystal"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                  "Name": "beskar:green_crystal_block_floor"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:vertical_gradient",
+                            "random_name": "beskar:mandalore_lower_surface",
+                            "true_at_and_below": {
+                              "absolute": 40
+                            },
+                            "false_at_and_above": {
+                              "absolute": 60
+                            }
                           },
                           "then_run": {
                             "type": "minecraft:sequence",
@@ -704,12 +779,12 @@
                                   "type": "minecraft:noise_threshold",
                                   "noise": "customplanets:mandalore_variant",
                                   "min_threshold": -1000000.0,
-                                  "max_threshold": -0.2
+                                  "max_threshold": -0.88
                                 },
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "beskar:green_crystal_block"
+                                    "Name": "beskar:deep_crystal"
                                   }
                                 }
                               },
@@ -718,65 +793,90 @@
                                 "if_true": {
                                   "type": "minecraft:noise_threshold",
                                   "noise": "customplanets:mandalore_variant",
-                                  "min_threshold": -0.15,
-                                  "max_threshold": 0.85
+                                  "min_threshold": -0.88,
+                                  "max_threshold": 0.08
                                 },
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "beskar:green_crystal_block_floor"
+                                    "Name": "beskar:stony_crystal"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "minecraft:condition",
+                                "if_true": {
+                                  "type": "minecraft:noise_threshold",
+                                  "noise": "customplanets:mandalore_variant",
+                                  "min_threshold": 0.92,
+                                  "max_threshold": 1000000.0
+                                },
+                                "then_run": {
+                                  "type": "minecraft:block",
+                                  "result_state": {
+                                    "Name": "beskar:green_crystal_block_floor_cracked"
                                   }
                                 }
                               },
                               {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "beskar:green_crystal_block_floor_cracked"
+                                  "Name": "beskar:green_crystal_block_floor"
                                 }
                               }
                             ]
                           }
                         },
                         {
-                          "type": "minecraft:sequence",
-                          "sequence": [
-                            {
-                              "type": "minecraft:condition",
-                              "if_true": {
-                                "type": "minecraft:noise_threshold",
-                                "noise": "customplanets:mandalore_variant",
-                                "min_threshold": 0.95,
-                                "max_threshold": 1000000.0
-                              },
-                              "then_run": {
-                                "type": "minecraft:block",
-                                "result_state": {
-                                  "Name": "beskar:green_crystal_block_floor_cracked"
-                                }
-                              }
-                            },
-                            {
-                              "type": "minecraft:condition",
-                              "if_true": {
-                                "type": "minecraft:noise_threshold",
-                                "noise": "customplanets:mandalore_debris",
-                                "min_threshold": 0.7,
-                                "max_threshold": 1000000.0
-                              },
-                              "then_run": {
-                                "type": "minecraft:block",
-                                "result_state": {
-                                  "Name": "minecraft:gravel"
-                                }
-                              }
-                            },
-                            {
-                              "type": "minecraft:block",
-                              "result_state": {
-                                "Name": "beskar:green_crystal_block_floor"
-                              }
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "customplanets:mandalore_polish",
+                            "min_threshold": 0.975,
+                            "max_threshold": 1000000.0
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "beskar:polished_glass"
                             }
-                          ]
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "customplanets:mandalore_variant",
+                            "min_threshold": 0.18,
+                            "max_threshold": 0.42
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "beskar:stony_crystal"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "customplanets:mandalore_variant",
+                            "min_threshold": 0.90,
+                            "max_threshold": 1000000.0
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "beskar:green_crystal_block_floor_cracked"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:block",
+                          "result_state": {
+                            "Name": "beskar:green_crystal_block_floor"
+                          }
                         }
                       ]
                     }
@@ -796,10 +896,44 @@
                         {
                           "type": "minecraft:condition",
                           "if_true": {
+                            "type": "minecraft:vertical_gradient",
+                            "random_name": "beskar:mandalore_crystal_floor_cutoff_under",
+                            "true_at_and_below": {
+                              "absolute": 39
+                            },
+                            "false_at_and_above": {
+                              "absolute": 40
+                            }
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "minecraft:stone"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "customplanets:mandalore_debris",
-                            "min_threshold": 0.6,
+                            "min_threshold": 0.95,
                             "max_threshold": 1000000.0
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "minecraft:stone"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "customplanets:mandalore_debris",
+                            "min_threshold": 0.82,
+                            "max_threshold": 0.95
                           },
                           "then_run": {
                             "type": "minecraft:block",
@@ -811,16 +945,142 @@
                         {
                           "type": "minecraft:condition",
                           "if_true": {
-                            "type": "minecraft:noise_threshold",
-                            "noise": "customplanets:mandalore_primary",
-                            "min_threshold": -0.8,
-                            "max_threshold": 1000000.0
+                            "type": "minecraft:not",
+                            "invert": {
+                              "type": "minecraft:vertical_gradient",
+                              "random_name": "beskar:mandalore_mountains_under",
+                              "true_at_and_below": {
+                                "absolute": 100
+                              },
+                              "false_at_and_above": {
+                                "absolute": 120
+                              }
+                            }
                           },
                           "then_run": {
-                            "type": "minecraft:block",
-                            "result_state": {
-                              "Name": "beskar:green_crystal_block_floor"
+                            "type": "minecraft:sequence",
+                            "sequence": [
+                              {
+                                "type": "minecraft:condition",
+                                "if_true": {
+                                  "type": "minecraft:noise_threshold",
+                                  "noise": "customplanets:mandalore_oxidation",
+                                  "min_threshold": 0.66,
+                                  "max_threshold": 1000000.0
+                                },
+                                "then_run": {
+                                  "type": "minecraft:block",
+                                  "result_state": {
+                                    "Name": "beskar:oxidized_crystal"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "minecraft:condition",
+                                "if_true": {
+                                  "type": "minecraft:noise_threshold",
+                                  "noise": "customplanets:mandalore_variant",
+                                  "min_threshold": 0.92,
+                                  "max_threshold": 1000000.0
+                                },
+                                "then_run": {
+                                  "type": "minecraft:block",
+                                  "result_state": {
+                                    "Name": "beskar:green_crystal_block_floor_cracked"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "minecraft:condition",
+                                "if_true": {
+                                  "type": "minecraft:noise_threshold",
+                                  "noise": "customplanets:mandalore_variant",
+                                  "min_threshold": 0.16,
+                                  "max_threshold": 0.40
+                                },
+                                "then_run": {
+                                  "type": "minecraft:block",
+                                  "result_state": {
+                                    "Name": "beskar:stony_crystal"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                  "Name": "beskar:green_crystal_block_floor"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:vertical_gradient",
+                            "random_name": "beskar:mandalore_lower_under",
+                            "true_at_and_below": {
+                              "absolute": 40
+                            },
+                            "false_at_and_above": {
+                              "absolute": 58
                             }
+                          },
+                          "then_run": {
+                            "type": "minecraft:sequence",
+                            "sequence": [
+                              {
+                                "type": "minecraft:condition",
+                                "if_true": {
+                                  "type": "minecraft:noise_threshold",
+                                  "noise": "customplanets:mandalore_variant",
+                                  "min_threshold": -1000000.0,
+                                  "max_threshold": -0.84
+                                },
+                                "then_run": {
+                                  "type": "minecraft:block",
+                                  "result_state": {
+                                    "Name": "beskar:deep_crystal"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "minecraft:condition",
+                                "if_true": {
+                                  "type": "minecraft:noise_threshold",
+                                  "noise": "customplanets:mandalore_variant",
+                                  "min_threshold": -0.84,
+                                  "max_threshold": 0.10
+                                },
+                                "then_run": {
+                                  "type": "minecraft:block",
+                                  "result_state": {
+                                    "Name": "beskar:stony_crystal"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "minecraft:condition",
+                                "if_true": {
+                                  "type": "minecraft:noise_threshold",
+                                  "noise": "customplanets:mandalore_variant",
+                                  "min_threshold": 0.94,
+                                  "max_threshold": 1000000.0
+                                },
+                                "then_run": {
+                                  "type": "minecraft:block",
+                                  "result_state": {
+                                    "Name": "beskar:green_crystal_block_floor_cracked"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                  "Name": "beskar:green_crystal_block_floor"
+                                }
+                              }
+                            ]
                           }
                         },
                         {
@@ -828,13 +1088,13 @@
                           "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "customplanets:mandalore_variant",
-                            "min_threshold": 0.95,
-                            "max_threshold": 1000000.0
+                            "min_threshold": 0.18,
+                            "max_threshold": 0.42
                           },
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "beskar:green_crystal_block_floor_cracked"
+                              "Name": "beskar:stony_crystal"
                             }
                           }
                         },
@@ -862,10 +1122,90 @@
                         {
                           "type": "minecraft:condition",
                           "if_true": {
-                            "type": "minecraft:noise_threshold",
-                            "noise": "customplanets:mandalore_primary",
-                            "min_threshold": -0.8,
-                            "max_threshold": 1000000.0
+                            "type": "minecraft:vertical_gradient",
+                            "random_name": "beskar:mandalore_crystal_floor_cutoff_deep",
+                            "true_at_and_below": {
+                              "absolute": 39
+                            },
+                            "false_at_and_above": {
+                              "absolute": 40
+                            }
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "minecraft:stone"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:not",
+                            "invert": {
+                              "type": "minecraft:vertical_gradient",
+                              "random_name": "beskar:mandalore_mountains_deep",
+                              "true_at_and_below": {
+                                "absolute": 100
+                              },
+                              "false_at_and_above": {
+                                "absolute": 120
+                              }
+                            }
+                          },
+                          "then_run": {
+                            "type": "minecraft:sequence",
+                            "sequence": [
+                              {
+                                "type": "minecraft:condition",
+                                "if_true": {
+                                  "type": "minecraft:noise_threshold",
+                                  "noise": "customplanets:mandalore_oxidation",
+                                  "min_threshold": 0.70,
+                                  "max_threshold": 1000000.0
+                                },
+                                "then_run": {
+                                  "type": "minecraft:block",
+                                  "result_state": {
+                                    "Name": "beskar:oxidized_crystal"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "minecraft:condition",
+                                "if_true": {
+                                  "type": "minecraft:noise_threshold",
+                                  "noise": "customplanets:mandalore_variant",
+                                  "min_threshold": 0.18,
+                                  "max_threshold": 0.40
+                                },
+                                "then_run": {
+                                  "type": "minecraft:block",
+                                  "result_state": {
+                                    "Name": "beskar:stony_crystal"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                  "Name": "beskar:green_crystal_block_floor"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:vertical_gradient",
+                            "random_name": "beskar:mandalore_lower_deep",
+                            "true_at_and_below": {
+                              "absolute": 40
+                            },
+                            "false_at_and_above": {
+                              "absolute": 56
+                            }
                           },
                           "then_run": {
                             "type": "minecraft:sequence",
@@ -875,13 +1215,13 @@
                                 "if_true": {
                                   "type": "minecraft:noise_threshold",
                                   "noise": "customplanets:mandalore_variant",
-                                  "min_threshold": -1000000.0,
-                                  "max_threshold": -0.25
+                                  "min_threshold": -0.40,
+                                  "max_threshold": 0.18
                                 },
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "beskar:green_crystal_block"
+                                    "Name": "beskar:stony_crystal"
                                   }
                                 }
                               },
@@ -890,7 +1230,7 @@
                                 "if_true": {
                                   "type": "minecraft:noise_threshold",
                                   "noise": "customplanets:mandalore_variant",
-                                  "min_threshold": 0.96,
+                                  "min_threshold": 0.95,
                                   "max_threshold": 1000000.0
                                 },
                                 "then_run": {
@@ -907,6 +1247,49 @@
                                 }
                               }
                             ]
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:vertical_gradient",
+                            "random_name": "beskar:mandalore_deep_remnants",
+                            "true_at_and_below": {
+                              "absolute": 40
+                            },
+                            "false_at_and_above": {
+                              "absolute": 52
+                            }
+                          },
+                          "then_run": {
+                            "type": "minecraft:condition",
+                            "if_true": {
+                              "type": "minecraft:noise_threshold",
+                              "noise": "customplanets:mandalore_variant",
+                              "min_threshold": -0.72,
+                              "max_threshold": -0.46
+                            },
+                            "then_run": {
+                              "type": "minecraft:block",
+                              "result_state": {
+                                "Name": "beskar:stony_crystal"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "customplanets:mandalore_variant",
+                            "min_threshold": 0.18,
+                            "max_threshold": 0.40
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "beskar:stony_crystal"
+                            }
                           }
                         },
                         {
@@ -933,9 +1316,67 @@
                         {
                           "type": "minecraft:condition",
                           "if_true": {
+                            "type": "minecraft:vertical_gradient",
+                            "random_name": "beskar:mandalore_crystal_floor_cutoff_transition",
+                            "true_at_and_below": {
+                              "absolute": 39
+                            },
+                            "false_at_and_above": {
+                              "absolute": 40
+                            }
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "minecraft:stone"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:vertical_gradient",
+                            "random_name": "beskar:mandalore_lower_transition",
+                            "true_at_and_below": {
+                              "absolute": 40
+                            },
+                            "false_at_and_above": {
+                              "absolute": 58
+                            }
+                          },
+                          "then_run": {
+                            "type": "minecraft:sequence",
+                            "sequence": [
+                              {
+                                "type": "minecraft:condition",
+                                "if_true": {
+                                  "type": "minecraft:noise_threshold",
+                                  "noise": "customplanets:mandalore_variant",
+                                  "min_threshold": -0.25,
+                                  "max_threshold": 0.45
+                                },
+                                "then_run": {
+                                  "type": "minecraft:block",
+                                  "result_state": {
+                                    "Name": "beskar:stony_crystal"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                  "Name": "minecraft:stone"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
                             "type": "minecraft:noise_threshold",
                             "noise": "customplanets:mandalore_variant",
-                            "min_threshold": 0.45,
+                            "min_threshold": 0.58,
                             "max_threshold": 1000000.0
                           },
                           "then_run": {

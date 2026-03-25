@@ -2,7 +2,7 @@
   "type": "minecraft:ore",
   "config": {
     "discard_chance_on_air_exposure": 0.15,
-    "size": 14,
+    "size": 12,
     "targets": [
       {
         "target": {
@@ -26,6 +26,42 @@
         "target": {
           "predicate_type": "minecraft:block_match",
           "block": "beskar:green_crystal_block_floor_cracked"
+        },
+        "state": {
+          "Name": "minecraft:gravel"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "beskar:stony_crystal"
+        },
+        "state": {
+          "Name": "minecraft:gravel"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "beskar:oxidized_crystal"
+        },
+        "state": {
+          "Name": "minecraft:gravel"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "beskar:polished_glass"
+        },
+        "state": {
+          "Name": "minecraft:gravel"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "beskar:deep_crystal"
         },
         "state": {
           "Name": "minecraft:gravel"

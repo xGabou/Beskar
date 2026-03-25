@@ -63,6 +63,27 @@ public class ModBlocks {
                     .sound(SoundType.GLASS)
                     .requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> DEEP_CRYSTAL = BLOCKS.register("deep_crystal",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
+                    .mapColor(MapColor.COLOR_LIGHT_GREEN)
+                    .strength(1.9F, 3.0F)
+                    .sound(SoundType.GLASS)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> POLISHED_GLASS = BLOCKS.register("polished_glass",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TINTED_GLASS)
+                    .mapColor(MapColor.COLOR_LIGHT_GREEN)
+                    .strength(1.0F, 1.5F)
+                    .sound(SoundType.GLASS)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> OXIDIZED_CRYSTAL = BLOCKS.register("oxidized_crystal",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(1.7F, 2.8F)
+                    .sound(SoundType.GLASS)
+                    .requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> STONY_CRYSTAL = BLOCKS.register("stony_crystal",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.TUFF)
                     .mapColor(MapColor.STONE)

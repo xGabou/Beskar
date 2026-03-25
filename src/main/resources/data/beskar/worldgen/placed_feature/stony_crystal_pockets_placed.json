@@ -1,9 +1,9 @@
 {
-  "feature": "beskar:beskar_ore",
+  "feature": "beskar:stony_crystal_pockets",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 6
+      "count": 18
     },
     {
       "type": "minecraft:in_square"
@@ -13,10 +13,10 @@
       "height": {
         "type": "minecraft:uniform",
         "min_inclusive": {
-          "absolute": -24
+          "absolute": 40
         },
         "max_inclusive": {
-          "absolute": 64
+          "absolute": 92
         }
       }
     },
@@ -25,4 +25,3 @@
     }
   ]
 }
-

@@ -1,8 +1,8 @@
 {
-  "ambient_light": 0,
+  "ambient_light": 0.06,
   "bed_works": true,
   "coordinate_scale": 1,
-  "effects": "minecraft:badlands",
+  "effects": "minecraft:overworld",
   "has_ceiling": false,
   "has_raids": false,
   "has_skylight": true,

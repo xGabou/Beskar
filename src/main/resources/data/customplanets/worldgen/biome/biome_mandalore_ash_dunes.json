@@ -8,7 +8,7 @@
   },
   "downfall": 0.0,
   "effects": {
-    "fog_color": 5131854,
+    "fog_color": 5724787,
     "grass_color_modifier": "none",
     "mood_sound": {
       "block_search_extent": 8,
@@ -16,9 +16,9 @@
       "sound": "minecraft:ambient.basalt_deltas.mood",
       "tick_delay": 5000
     },
-    "sky_color": 6250335,
-    "water_color": 2302755,
-    "water_fog_color": 1315860
+    "sky_color": 7232551,
+    "water_color": 3158064,
+    "water_fog_color": 1907997
   },
   "features": [
     [],
