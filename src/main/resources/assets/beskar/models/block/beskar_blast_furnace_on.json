@@ -1,4 +1,9 @@
 {
-  "parent": "minecraft:block/blast_furnace_on"
+  "parent": "minecraft:block/blast_furnace_on",
+  "textures": {
+    "front": "beskar:block/small_beskar_forge",
+    "side": "minecraft:block/blast_furnace_side",
+    "top": "minecraft:block/blast_furnace_top"
+  }
 }
 

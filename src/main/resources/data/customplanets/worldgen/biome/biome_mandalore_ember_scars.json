@@ -1,0 +1,54 @@
+{
+  "temperature_modifier": "none",
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:canyon"
+    ]
+  },
+  "downfall": 0.0,
+  "effects": {
+    "fog_color": 5133651,
+    "grass_color_modifier": "none",
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.basalt_deltas.mood",
+      "tick_delay": 3600
+    },
+    "sky_color": 6512467,
+    "water_color": 2765373,
+    "water_fog_color": 1443070
+  },
+  "features": [
+    [],
+    [
+      "minecraft:lake_lava_underground"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:spring_lava"
+    ],
+    []
+  ],
+  "has_precipitation": false,
+  "precipitation": "none",
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 1.6,
+  "precipitation_tick": 0.0
+}

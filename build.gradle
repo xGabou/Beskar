@@ -166,7 +166,7 @@ dependencies {
     implementation fg.deobf("curse.maven:xray-neo-forge-fabric-1414116:7382929")
     implementation fg.deobf("curse.maven:simple-clouds-1121215:6928978")
     implementation fg.deobf("curse.maven:embeddium-908741:5681725")
-    implementation fg.deobf("curse.maven:gabous-caves-1494710:7807474")
+    implementation fg.deobf("curse.maven:gabous-caves-1494710:7812128")
     implementation fg.deobf("curse.maven:gabous-construct-for-star-wars-1494814:7809086")
     implementation fg.deobf("curse.maven:citadel-331936:7476570")
     implementation fg.deobf("curse.maven:mantle-74924:7563777")

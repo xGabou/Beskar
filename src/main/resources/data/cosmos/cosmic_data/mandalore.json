@@ -2,23 +2,23 @@
   "attached_dimention_id": "customplanets:planet_mandalore",
   "skybox_data": {
     "texture_id": "skybox_solar",
-    "alpha": 125,
+    "alpha": 28,
     "yaw": 0,
     "pitch": 156,
     "roll": -54,
     "rotation_plane": "pitch",
-    "vanilla_sunlight": false,
+    "vanilla_sunlight": true,
     "sunlight_color": {
-      "r": 180,
-      "g": 200,
-      "b": 255,
-      "alpha": 255
+      "r": 212,
+      "g": 236,
+      "b": 214,
+      "alpha": 220
     }
   },
   "dimensional_data": {
     "dimension_type": "planet",
     "weather": false,
-    "clouds": false,
+    "clouds": true,
     "sky_objects": true,
     "gravity": 96,
     "air_resistance": 0.98,
@@ -48,14 +48,14 @@
       "roll_speed": 1,
       "scale": 0.1,
       "core_color": {
-        "r": 255,
-        "g": 245,
-        "b": 220
+        "r": 250,
+        "g": 244,
+        "b": 226
       },
       "bloom_color": {
-        "r": 90,
-        "g": 110,
-        "b": 160
+        "r": 124,
+        "g": 162,
+        "b": 126
       }
     },
     "mandalore": {

@@ -6,99 +6,75 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "customplanets:biome_mandalore_scorched_wastelands",
+          "biome": "customplanets:biome_mandalore_shard_plains",
           "parameters": {
-            "temperature": 1.0,
-            "humidity": 0.0,
-            "continentalness": 0.5,
-            "erosion": -0.35,
-            "weirdness": -0.7,
+            "temperature": 0.95,
+            "humidity": -0.15,
+            "continentalness": 0.18,
+            "erosion": 0.68,
+            "weirdness": 0.0,
             "depth": 0.0,
             "offset": 0.0
           }
         },
         {
-          "biome": "customplanets:biome_mandalore_ash_dunes",
+          "biome": "customplanets:biome_mandalore_glass_deltas",
           "parameters": {
-            "temperature": 1.2,
-            "humidity": -0.2,
-            "continentalness": 0.15,
-            "erosion": 0.3,
-            "weirdness": 0.1,
-            "depth": 0.0,
-            "offset": 0.02
-          }
-        },
-        {
-          "biome": "customplanets:biome_mandalore_glassed_desert",
-          "parameters": {
-            "temperature": 1.3,
-            "humidity": -0.4,
-            "continentalness": 0.65,
-            "erosion": -0.1,
-            "weirdness": 0.6,
-            "depth": 0.0,
-            "offset": 0.05
-          }
-        },
-        {
-          "biome": "customplanets:biome_mandalore_ruined_city",
-          "parameters": {
-            "temperature": 0.9,
-            "humidity": 0.1,
-            "continentalness": 0.35,
-            "erosion": -0.5,
-            "weirdness": -0.1,
-            "depth": 0.0,
-            "offset": 0.12
-          }
-        },
-        {
-          "biome": "customplanets:biome_mandalore_cracked_basin",
-          "parameters": {
-            "temperature": 0.95,
-            "humidity": -0.1,
-            "continentalness": -0.35,
-            "erosion": 0.45,
+            "temperature": 1.05,
+            "humidity": 0.05,
+            "continentalness": -0.12,
+            "erosion": 0.42,
             "weirdness": -0.35,
             "depth": 0.0,
-            "offset": 0.2
+            "offset": 0.04
           }
         },
         {
-          "biome": "customplanets:biome_mandalore_dead_forge_fields",
+          "biome": "customplanets:biome_mandalore_ember_scars",
           "parameters": {
-            "temperature": 1.1,
-            "humidity": -0.3,
-            "continentalness": 0.4,
-            "erosion": -0.2,
-            "weirdness": 0.35,
+            "temperature": 1.35,
+            "humidity": -0.45,
+            "continentalness": 0.42,
+            "erosion": -0.18,
+            "weirdness": 0.32,
             "depth": 0.0,
             "offset": 0.08
           }
         },
         {
-          "biome": "customplanets:biome_mandalore_toxic_ruins",
+          "biome": "customplanets:biome_mandalore_toxic_hollows",
           "parameters": {
-            "temperature": 0.85,
-            "humidity": 0.5,
-            "continentalness": 0.2,
-            "erosion": 0.2,
-            "weirdness": -0.5,
+            "temperature": 0.78,
+            "humidity": 0.65,
+            "continentalness": -0.28,
+            "erosion": 0.18,
+            "weirdness": -0.82,
             "depth": 0.0,
-            "offset": 0.05
+            "offset": 0.16
           }
         },
         {
-          "biome": "customplanets:biome_mandalore_blackened_canyon",
+          "biome": "customplanets:biome_mandalore_rift_barrens",
           "parameters": {
-            "temperature": 0.9,
-            "humidity": -0.15,
-            "continentalness": 0.55,
-            "erosion": -0.85,
-            "weirdness": 0.85,
+            "temperature": 0.88,
+            "humidity": -0.35,
+            "continentalness": -0.48,
+            "erosion": -0.78,
+            "weirdness": 0.72,
             "depth": 0.0,
-            "offset": 0.18
+            "offset": 0.20
+          }
+        },
+        {
+          "biome": "customplanets:biome_mandalore_oxide_highlands",
+          "parameters": {
+            "temperature": 0.92,
+            "humidity": -0.25,
+            "continentalness": 0.78,
+            "erosion": -0.92,
+            "weirdness": 0.88,
+            "depth": 0.0,
+            "offset": 0.24
           }
         },
         {

@@ -2,8 +2,6 @@ package net.Gabou.beskar.event;
 
 import net.Gabou.beskar.Beskar;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraftforge.event.entity.living.MobSpawnEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -28,15 +26,6 @@ public final class MandaloreSpawnEvents {
             return;
         }
 
-        Mob mob = event.getEntity();
-        MobCategory category = mob.getType().getCategory();
-        if (category == MobCategory.CREATURE
-                || category == MobCategory.AMBIENT
-                || category == MobCategory.WATER_AMBIENT
-                || category == MobCategory.WATER_CREATURE
-                || category == MobCategory.UNDERGROUND_WATER_CREATURE
-                || category == MobCategory.AXOLOTLS) {
-            event.setResult(Event.Result.DENY);
-        }
+        event.setResult(Event.Result.DENY);
     }
 }

@@ -31,9 +31,9 @@
       "value_scale": 0.55
     }
   ],
-  "weather_type": "thunderstorm",
-  "storminess": 0.68,
-  "storm_start": 56.0,
-  "storm_fade_distance": 96.0,
-  "transparency_fade": 0.01
+  "weather_type": "none",
+  "storminess": 0.18,
+  "storm_start": 80.0,
+  "storm_fade_distance": 144.0,
+  "transparency_fade": 0.08
 }

@@ -610,16 +610,12 @@
               "if_true": {
                 "type": "minecraft:biome",
                 "biome_is": [
-                  "customplanets:biome_mandalore_scorched_wastelands",
-                  "customplanets:biome_mandalore_ash_dunes",
-                  "customplanets:biome_mandalore_glassed_desert",
-                  "customplanets:biome_mandalore_ruined_city",
-                  "customplanets:biome_mandalore_cracked_basin",
-                  "customplanets:biome_mandalore_bombarded_flats",
-                  "customplanets:biome_mandalore_dead_forge_fields",
-                  "customplanets:biome_mandalore_toxic_ruins",
-                  "customplanets:biome_mandalore_blackened_canyon",
-                  "customplanets:biome_mandalore_raider_zones"
+                  "customplanets:biome_mandalore_shard_plains",
+                  "customplanets:biome_mandalore_glass_deltas",
+                  "customplanets:biome_mandalore_ember_scars",
+                  "customplanets:biome_mandalore_toxic_hollows",
+                  "customplanets:biome_mandalore_rift_barrens",
+                  "customplanets:biome_mandalore_oxide_highlands"
                 ]
               },
               "then_run": {
@@ -643,10 +639,10 @@
                             "type": "minecraft:vertical_gradient",
                             "random_name": "beskar:mandalore_crystal_floor_cutoff_surface",
                             "true_at_and_below": {
-                              "absolute": 39
+                              "absolute": 24
                             },
                             "false_at_and_above": {
-                              "absolute": 40
+                              "absolute": 30
                             }
                           },
                           "then_run": {
@@ -899,10 +895,10 @@
                             "type": "minecraft:vertical_gradient",
                             "random_name": "beskar:mandalore_crystal_floor_cutoff_under",
                             "true_at_and_below": {
-                              "absolute": 39
+                              "absolute": 24
                             },
                             "false_at_and_above": {
-                              "absolute": 40
+                              "absolute": 30
                             }
                           },
                           "then_run": {
@@ -1125,10 +1121,10 @@
                             "type": "minecraft:vertical_gradient",
                             "random_name": "beskar:mandalore_crystal_floor_cutoff_deep",
                             "true_at_and_below": {
-                              "absolute": 39
+                              "absolute": 24
                             },
                             "false_at_and_above": {
-                              "absolute": 40
+                              "absolute": 30
                             }
                           },
                           "then_run": {
@@ -1334,10 +1330,10 @@
                             "type": "minecraft:vertical_gradient",
                             "random_name": "beskar:mandalore_crystal_floor_cutoff_transition",
                             "true_at_and_below": {
-                              "absolute": 39
+                              "absolute": 24
                             },
                             "false_at_and_above": {
-                              "absolute": 40
+                              "absolute": 30
                             }
                           },
                           "then_run": {
